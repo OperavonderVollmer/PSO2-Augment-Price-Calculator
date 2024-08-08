@@ -2,7 +2,7 @@ Good day, I made a quick little script that helps pea-brains like myself and sha
 
 REQUIREMENTS:<br>
 python (https://www.python.org/downloads/)<br>
-Phantasy Star 2 Online New Genesis (pso2.com)<br>
+Phantasy Star 2 Online New Genesis (https://www.pso2.com)<br>
 A working internet connection<br>
 The ability to read
 
