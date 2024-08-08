@@ -1,9 +1,9 @@
 Good day, I made a quick little script that helps pea-brains like myself and sharing it in case anyone else wants it
 
 REQUIREMENTS:
-python (https://www.python.org/downloads/)
-Phantasy Star 2 Online New Genesis (pso2.com)
-A working internet connection
+python (https://www.python.org/downloads/)\n
+Phantasy Star 2 Online New Genesis (pso2.com)\n
+A working internet connection\n
 The ability to read
 
 How to use:
