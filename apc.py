@@ -4,6 +4,7 @@ import locale
 locale.setlocale(locale.LC_ALL, '') 
 os.system('cls')
 
+#Putting down the components of each relevant augment
 halphinale = {
     'Aegis Soul IV':    30,
     'Ael Domina':       10,
