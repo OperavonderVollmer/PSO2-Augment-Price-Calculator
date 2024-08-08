@@ -1,6 +1,6 @@
 Good day, I made a quick little script that helps pea-brains like myself and sharing it in case anyone else wants it
 
-REQUIREMENTS:
+REQUIREMENTS:<br>
 python (https://www.python.org/downloads/)<br>
 Phantasy Star 2 Online New Genesis (pso2.com)<br>
 A working internet connection<br>
