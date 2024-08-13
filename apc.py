@@ -30,14 +30,14 @@ luxhalpinalefull = {
 gigasmaste = {
     'Gigas Might IV':       10,
     'Gigas Precision IV':   10,
-    'Gigas Technique IV':    10,
+    'Gigas Technique IV':   10,
 }
 
 glangigasmastebasic = {
     'Foundia':              10,
     'Gigas Might IV':       50,
     'Gigas Precision IV':   50,
-    'Gigas Technique IV':    50,
+    'Gigas Technique IV':   50,
 }
 
 glangigasmastefull = {
@@ -68,13 +68,13 @@ granddreadkeeperi = {
 granddreadkeeperiibasic= {
     'Dread Keeper V':   50,
     'Foundia':          10,
-    'Dualble V':         30
+    'Dualble V':        30
 }
 
 granddreadkeeperiifull= {
-    'Grand Dread Keeper I':   5,
-    'Foundia':          10,
-    'Dualble V':         30
+    'Grand Dread Keeper I':     5,
+    'Foundia':                  10,
+    'Dualble V':                30
 }
 
 highvkardomina ={
@@ -108,6 +108,8 @@ def calc(name, augment):
     print(f"""
 Grand Total to buy components {name}: {locale.format_string("%d", grandTotal, grouping=True)}
 Sell for above this price to make profit (including tax): {locale.format_string("%d", (grandTotal / 0.9), grouping=True)}""")
+    
+    print("\n----Program Looping----\n")
 
 print("Welcome to PSO2 Augment Price Calculator (APC)")
 
@@ -165,7 +167,6 @@ input: """)
             calc("Highkvar Domina", highvkardomina)
         case _:
             print("Sorry, please enter the number (1-13) corresponding to an augment")
-    print("\n----Program Looping----\n")
 
 
 input("\n\nThank you for using APC\nPress any key to continue...")
