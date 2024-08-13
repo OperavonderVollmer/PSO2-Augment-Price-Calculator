@@ -77,6 +77,12 @@ granddreadkeeperiifull= {
     'Dualble V':         30
 }
 
+highvkardomina ={
+    'Kvar Sovern':  30,
+    'Belgan Note':  150,
+    'Lostral Note': 150
+}
+
 def calc(name, augment):
     print(f"\nComponents for {name}")
     for compName, compNo in augment.items():
@@ -124,6 +130,7 @@ while programLoop:
     10      |   Grand Dread Keeper I 
     11      |   Grand Dread Keeper II (Basic Components)
     12      |   Grand Dread Keeper II (5x GDKI)
+    13      |   Highkvar Domina
 input: """)
 
     match augmentSelect:
@@ -151,6 +158,8 @@ input: """)
             calc("Grand Dread Keeper II", granddreadkeeperiibasic)
         case "12":
             calc("Grand Dread Keeper II", granddreadkeeperiifull)
+        case "13":
+            calc("Highkvar Domina", highvkardomina)
         case _:
             print("Sorry, please enter the number (1-12) corresponding to an augment")
     aftercare = input("Would you like to go again? (Y/N)\ninput: ")
