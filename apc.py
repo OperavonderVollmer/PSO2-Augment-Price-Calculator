@@ -89,7 +89,7 @@ def calc(name, augment):
         print(f"""    {compName} {compNo}x""")
     #temp key = price and value = total
     temp = []
-    print("\nPlease enter the value of the following augments (ex: 10000)\nEnter 0 if you don't plan on buying") 
+    print("\nPlease enter the value of the following augments (ex: 10000)\nEnter 0 or leave blank if you don't plan on buying") 
     for compName, compNo in augment.items():
         priceInput = input(f"{compName}: ")
         if not priceInput:
@@ -107,7 +107,7 @@ def calc(name, augment):
     
     print(f"""
 Grand Total to buy components {name}: {locale.format_string("%d", grandTotal, grouping=True)}
-Sell for above this price to make profit (including tax): {locale.format_string("%d", (grandTotal * 1.30), grouping=True)}""")
+Sell for above this price to make profit (including tax): {locale.format_string("%d", (grandTotal / 0.9), grouping=True)}""")
 
 print("Welcome to PSO2 Augment Price Calculator (APC)")
 
@@ -118,6 +118,7 @@ APC multiplies the values of the current prices of the components of the selecte
 programLoop = True
 while programLoop:
     augmentSelect = input("""\nPlease select an augment (example: 1 for Halphinale)
+    0       |   Quit Program (Strongest Augment BiS)
     1       |   Halphinale
     2       |   Lux Halphinale (Basic Components)
     3       |   Lux Halphinale (5x Halphinale)
@@ -134,6 +135,8 @@ while programLoop:
 input: """)
 
     match augmentSelect:
+        case "0":
+            programLoop = False
         case "1":
             calc("Halphinale", halphinale)
         case "2":
@@ -161,25 +164,8 @@ input: """)
         case "13":
             calc("Highkvar Domina", highvkardomina)
         case _:
-            print("Sorry, please enter the number (1-12) corresponding to an augment")
-    aftercare = input("Would you like to go again? (Y/N)\ninput: ")
-    match aftercare:
-        case "Y":
-            programLoop = True
-            os.system('cls')
-        case "y":
-            programLoop = True
-            os.system('cls')
-        case "":
-            programLoop = True
-        case "N":
-            programLoop = False
-        case "n":
-            programLoop = False
-            os.system('cls')
-        case _:
-            print("Invalid input")
-            programLoop = False
+            print("Sorry, please enter the number (1-13) corresponding to an augment")
+    print("\n----Program Looping----\n")
 
 
 input("\n\nThank you for using APC\nPress any key to continue...")
