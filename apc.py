@@ -42,7 +42,7 @@ glangigasmastebasic = {
 
 glangigasmastefull = {
     'Foundia':      10,
-    'Gigas Maste':  10
+    'Gigas Maste':  5
 }
 
 gladiasoul = {
